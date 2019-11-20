@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta property="og:locale" content="en_US" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="এখানে রেজিস্টার করলে আমরা আপনার সাথে যোগাযোগ করে নিবো।..." />
 <meta property="og:description" content="মানবতা বিরোধী NRC, NPR, NRIC, CAB মানছি না, মানবো না। ঐকবদ্ধ হয়ে ঝাপিয়ে পড়তে হবে,গণপ্রতিরোধ গড়ে তুলতে হবে । " />
@@ -23,16 +24,17 @@ body{
 }
 
 input[type=text], select, textarea {
-  width: 100%;
+  width: 96%;
 
-  padding: 12px;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
   background-color: #f8ffff;
   font-size=40px;
+
   
 }
 
@@ -44,6 +46,8 @@ input[type=button] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+    display: table;
+  margin: 0 auto
 }
 
 input[type=submit]:hover {
@@ -52,14 +56,14 @@ input[type=submit]:hover {
 
 input[type=submit] {
   background-color: #4CAF50;
-  width: 10%;
+  width: 20%;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   display: table;
-   margin: 0 auto
+  margin: 0 auto
    
 }
 
@@ -81,29 +85,44 @@ input[type=submit]:hover {
 
 
 P {
-  width: 100%;
-  border-radius: 25px;
+  width: 98%;
+  border-radius: 5px;
   border: 2px solid #73AD21;
-  padding: 30px;  
+  padding: 5px;  
   background-color: #9EfFf0;
-  margin-top: 30px;
-  margin-bottom: 30px;  
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 20px; 
+  
+  display: table;
+  margin: 2 auto
 }
 
 section {
-  border-radius: 25px;
+  width  :98%;
+  border-radius: 10px;
   border: 2px solid #73AD21;
   padding: 30px;
-  background-color: #55eeee; 
-  margin-top: 30px;
-  margin-bottom: 30px;    
+  background-color: #55eeee;
+
+  margin-bottom: 30px; 
+  display: table;
+  margin: 0 auto
+
+
 }
 
 img {
 
-  width: 100%;
+  width: 98%;
   height: 200px; 
    resize: vertical;
+   
+     border-radius: 10px;
+  border: 2px solid #73AD21;
+  display: table;
+  margin: 0 auto;
 }
 
 #label_fullname::after{
@@ -139,6 +158,9 @@ color:red
 </head>
 <body onload="loadFunction()">
 
+
+
+<div class="container">
 <iframe id="iframe_id" name="invisible"  onload="iframe_load()" style="display: none;"></iframe>
 
 
@@ -146,30 +168,28 @@ color:red
 
 <img src="https://raw.githubusercontent.com/friendmanjur/newr/master/noncrphoto.jpg" >
 
-
+<mainbody name="mainbody_name" id="mainbody_id">
 <section>"NO NRC" Movement এর সদস্যপদে যোগদানের আবেদন ফর্মে আপনাকে স্বাগত। ফর্মটিতে আপনার নাম,মোবাইল নম্বর,জেলা,ব্লক,গ্রাম-পঞ্চায়েতের নাম দেওয়াটা আবশ্যিক। সাথে আপনার ওয়াটস অ্যাপ, ফেসবুক ও টুঁইটার অ্যাকাউন্ট যোগের মাধ্যমে আমাদের সাথে সম্পর্ক নিবিড় করুন। ফর্মটি পূরণের সাত দিনের মধ্যে আপনার জেলার "NO NRC" Movement এর সহযোদ্ধা আপনার সাথে যোগাযোগ করে নেবেন।</section>
 
-
-<div class="container">
-  <form  name = "form_name" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdo7W7Bfk-yDLpcXFxj3Ye_Fu0moNL1WH2h9AdQpbh87x1anw/formResponse" target="invisible" method="POST" onsubmit="return validateForm()" id="mG61Hd">
+  <form  name="form_name" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdo7W7Bfk-yDLpcXFxj3Ye_Fu0moNL1WH2h9AdQpbh87x1anw/formResponse" target="invisible" emethod="POST" onsubmit="return validateForm()" id="mG61Hd">
  
      <p>
-    <label for="fname" id="label_fullname" style="font-size:20px">আপনার নাম: </label>
-    <input type="text" id="fullname" name="entry.1670764094" style = "font-size:30px"  placeholder="">
+    <label  id="label_fullname" style="font-size:20px">আপনার নাম: </label>
+    <input type="text" id="fullname" name="entry.1670764094" style = "font-size:20px"  placeholder="">
 	<label id="error_fullname_id" style="display: none;color:red">Error: Please enter valid name</label>
     </p>
    
  
     
     <p>
-     <label for="fname" id="label_mobileno" style="font-size:20px">আপনার মোবাইল নম্বর:  </label>
-    <input type="text" id="mobileno" name="entry.87207606" style = "font-size:30px" placeholder="">
+     <label  id="label_mobileno" style="font-size:20px">আপনার মোবাইল নম্বর:  </label>
+    <input type="text" id="mobileno" name="entry.87207606" style = "font-size:20px" placeholder="">
 	<label id="error_mobileno_id" style="display: none;color:red">Error: Mobile number must be 10 digit Number.</label>
 	
     </p>
 
     <p>
-    <label for="" id="label_district_dropdown" style="font-size:20px">জেলার নাম: </label>
+    <label id="label_district_dropdown" style="font-size:20px">জেলার নাম: </label>
     <select id="district_dropdown" name="entry.160860395" style = "font-size:20px">
       <option value="Select One">Select One</option>
     </select>
@@ -179,7 +199,7 @@ color:red
     
     
      <p>   
-    <label for="" id="label_block_dropdown" style="font-size:20px">ব্লক বা মিউনিসিপ্যালিটির নাম:</label>
+    <label  id="label_block_dropdown" style="font-size:20px">ব্লক বা মিউনিসিপ্যালিটির নাম:</label>
     <select id="block_dropdown" name="entry.876125809" style = "font-size:20px">
       <option value="Select One">Select One</option>  	
     </select>
@@ -189,7 +209,7 @@ color:red
    
    
        <p>
-     <label for="" id="label_gp_dropdown" style="font-size:20px">গ্রাম পঞ্চায়েতের নাম অথবা ওয়ার্ড নম্বর:</label>
+     <label  id="label_gp_dropdown" style="font-size:20px">গ্রাম পঞ্চায়েতের নাম অথবা ওয়ার্ড নম্বর:</label>
     <select id="gp_dropdown" name="entry.626745835" style = "font-size:20px">
       <option value="Select One">Select One</option>  
     </select>
@@ -200,29 +220,30 @@ color:red
 
       
           <p>
-    <label for="subject" style="font-size:20px"> ঠিকানা ( বাড়ি/রোড নম্বর , গ্রাম  , পোস্ট অফিস , পিন)</label>
+    <label  style="font-size:20px"> ঠিকানা ( বাড়ি/রোড নম্বর , গ্রাম  , পোস্ট অফিস , পিন)</label>
 	</br>
-	<label for="subject1" style="font-size:15px"> (উদাহরণ: Ground floor, 130A Haris Road, Sagorpara, PO:Jalalpur, PIN: 732126)</label>
-    <textarea id="subject" name="entry.1541820416" placeholder="" style="font-size:30px">
-    </textarea>
+	<label style="font-size:15px"> (উদাহরণ: Ground floor, 130A Haris Road, Sagorpara, PO:Jalalpur, PIN: 732126)</label>
+    <textarea id="subject" name="entry.1541820416" style="font-size:20px" rows="4"></textarea>
         </p>
  
 
      <p>   
-    <label for="fname" style="font-size:20px">আপনার ওয়াটস অ্যাপ নম্বর: </label>
-    <input type="text" id="fname" name="entry.692454878" style = "font-size:30px" placeholder="">
+    <label  style="font-size:20px">আপনার ওয়াটস অ্যাপ নম্বর: </label>
+    <input type="text" id="fname" name="entry.692454878" style = "font-size:20px" placeholder="">
 	 <label id="error_whatappsno_id" style="display: none;color:red">Error: Blank or valid mobile needed.</label>
         </p>
   
     
       <p>  
-        <label for="fname" style="font-size:20px">আপনার ফেসবুক প্রোফাইলের লিঙ্ক বা আপনার যেকোনো ফেসবুক পোস্টের লিংক: </label>
-    <input type="text" id="fname" name="entry.142209120" style = "font-size:20px" placeholder="">
+        <label  style="font-size:20px" >আপনার ফেসবুক প্রোফাইলের লিঙ্ক বা আপনার যেকোনো ফেসবুক পোস্টের লিংক: </label>
+  
+	  <textarea id="subject1" name="entry.142209120"" style="font-size:20px" rows="3"></textarea>
         </p>
 
         <p>
-            <label for="fname" style="font-size:20px">আপনার টুঁইটার প্রোফাইলের লিংক বা আপনার যেকোনো টুঁইটার পোস্টের লিংক:</label>
-    <input type="text" id="fname" name="entry.1073254914" style = "font-size:20px" placeholder="">
+            <label  style="font-size:20px">আপনার টুঁইটার প্রোফাইলের লিংক বা আপনার যেকোনো টুঁইটার পোস্টের লিংক:</label>
+   
+	<textarea id="subject2" name="entry.1073254914"" style="font-size:20px" rows="3"></textarea>
         </p>
     <br/>  
     
@@ -236,6 +257,18 @@ color:red
 
      
   </form>
+  
+  </mainbody>
+  
+   <hiddenbody name = "hiddenbody_name" id="hiddenbody_id" style="display: none">
+ <p>
+ <label id="hidden_lebel01" style="color:blue;font-size:30px">ধন্যবাদ.</label>
+  </br>
+</br>
+ <label id="hidden_lebel01" style="color:blue;font-size:30px">আপনার রেজিস্ট্রেশনটি ঠিকমতো সম্পূর্ণ হলো. আমরা আপনাকে ফোন করে যোগাযোগ করো নিবো.</label>
+ </p>
+ 
+ </hiddenbody>
   </br>
     </br>
 	  </br>
@@ -7216,7 +7249,9 @@ var iframeloadcount = 0
 
    iframeloadcount = iframeloadcount + 1
    if  (iframeloadcount >1){
-      alert("আপনার রেজিস্ট্রেশনটি ঠিকমতো সম্পূর্ণ হলো. \nআমরা আপনাকে ফোন করে যোগাযোগ করো নিবো.")
+      document.getElementById("mainbody_id").style.display = 'none';
+	  document.getElementById("hiddenbody_id").style.display = 'inline';
+      //alert("আপনার রেজিস্ট্রেশনটি ঠিকমতো সম্পূর্ণ হলো. \nআমরা আপনাকে ফোন করে যোগাযোগ করো নিবো.");
 	
    }
   
@@ -7258,7 +7293,7 @@ var iframeloadcount = 0
   
   if (mobileErrorCount == 0){ 
   if (mobileno_var.length == "") {
-   // alert("Mobile no must be 10 digit Number only.\No space or Letter allowed in between.");
+    //alert("Mobile no must be 10 digit Number only.\No space or Letter allowed in between.");
     //return false;
     TotalErrorCount = TotalErrorCount + 1;
 	mobileErrorCount = mobileErrorCount + 1;
@@ -7354,6 +7389,7 @@ var iframeloadcount = 0
   
   }
   else{
+
     return true;
   }
   
